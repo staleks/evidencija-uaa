@@ -120,7 +120,7 @@ public class OAuth2AuthorizationServerConfig
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/evidencija-uaa");
+		dataSource.setUrl("jdbc:mysql://localhost:3306/evidencija-uaa?autoReconnect=true&useSSL=false");
 		dataSource.setUsername("root");
 		dataSource.setPassword("root");
 
